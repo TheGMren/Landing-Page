@@ -21,25 +21,166 @@ a {
 /*! Header Styling  */
 
 .header {
-  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 10;
   background-color: #1f2937;
 }
-
-.main {
-  flex: 3;
+/* > */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+
+.header-top-logo {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.header-top-nav {
+  display: flex;
+  gap: 16px;
+}
+/* > */
+.header-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 30vw;
+  gap: 2vh;
+}
+
+.header-main-title {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
+.header-main-subtext {
+  color: #e6e7eb;
+  font-size: 18px;
+}
+
+.header-main-button {
+  margin-bottom: 15px;
+}
+
+.sign-up-button {
+  background-color: #3882f6;
+  padding: 5px 25px;
+  border-radius: 5px;
+  border: none;
+  color: #f9faf8;
+  font-weight: bold;
+}
+
+.header-main-image {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+  border: 1px black solid;
+}
+/*! Main Styling */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 10px;
+  flex: 8;
+}
+
+.main-card-container {
+  display: flex;
+  gap: 32px;
+  text-align: center;
+}
+
+.card-box {
+  border: 2px solid #3772f6;
+  height: 75px;
+  width: 75px;
+  border-radius: 8px;
+}
+
+/*! Quote styling */
 
 .quote {
-  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 8;
   background-color: #e5e7eb;
 }
-
-.action {
-  flex: 2;
+.quote-holder {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.quote-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 25vw;
+  line-height: 1.5;
+  font-style: italic;
 }
 
+.quote-author {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: italic;
+}
+
+/*! Action styling */
+
+.action {
+  flex: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-title {
+  color: #f9faf8;
+  font-weight: bold;
+}
+
+.action-subtext {
+  color: #e5e7eb;
+}
+
+.action-box {
+  background-color: #3772f6;
+  display: flex;
+  padding: 20px 50px;
+  border-radius: 10px;
+  gap: 50px;
+}
+
+.action-button {
+  border: 1px solid white;
+}
+
+/*! Footer styling */
 .footer {
-  flex: 1;
+  flex: 2;
   background-color: #1f2937;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
