@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
 </head>
-    <body>
-    <div class="content">
-            <div class="navbar">
-                <img src="images/logo.png" alt="" class="navbar-logo">
-                <ul class="list-all">
-                    <li>header link 1</li>
-                    <li>header link 2</li>
-                    <li>header link 3</li>
+
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top-logo">Header LOGO</div>
+            <div class="header-top-nav">
+                <ul class="nav-section">
+                    <li class="list-item"><a href="#">header link one</a></li>
+                    <li class="list-item"><a href="#">header link two</a></li>
+                    <li class="list-item"><a href="#">header link three</a></li>
                 </ul>
-            
             </div>
-            <div class="hero">
-               <div class="hero-left"> 
-                    <strong class="hero-title">This website is Awesome!</strong>
-                    <p class="hero-subtext">This website has some subtext that goes here under main title</p>
-                    <button class="button-signup"> Sign up</button>
-                </div>
-                <div class="img-box">
-                    <p>  this is a placeholder for an image</p>
-                </div>
-            </div>
-            <div class="main">
-            <p class="main-text">Some random information</p>
-            <div class="main-img">
-
-                <div class="photo">
-                    <img src="images/placeholder.jpg" alt="placeholder" class="placeholder">
-                    <p class="img-para">Lorem ipsum</p>
-                </div>
-                <div class="photo">    
-                    <img src="images/placeholder.jpg" alt="placeholder" class="placeholder">
-                    <p class="img-para">Lorem ipsum</p>
-                </div>
-                <div class="photo">
-                    <img src="images/placeholder.jpg" alt="placeholder" class="placeholder">
-                    <p class="img-para">Lorem ipsum</p>
-                </div>
-                <div class="photo">
-                    <img src="images/placeholder.jpg" alt="placeholder" class="placeholder">
-                    <p class="img-para">Lorem ipsum</p>
-                </div>
-            </div>
-            </div>
-            <div class="quote">
-            <i class="quote-text"> 
-                Police on my drawers, I have to pause
-               <p> 40 ounce in my lap and it's freezing my balls</p>
-
-        </i>
-        <div class="author-img">
-            <img src="images/easy.jpg" alt="" id="easy">
-            <p class="quote-author">-Eazy E, God of Rap</p>
-            <img src="images/eazy.jpg" alt="" id="eazy">
         </div>
+        <div class="header-main">
+            <div class="header-main-text">
+                <div class="header-main-title">AA</div>
+                <div class="header-main-subtext">TT</div>
+                <div class="header-main-button"></div>
             </div>
-            <div class="signup">
-                <div class="textin">
-                    <p class="signup-text">
-                        Call to action!
-                    </p>
-                    <p class="signup-subtext">
-                        signup for our product, Just click the button!
-                    </p>
+            <div class="header-main-image"></div>
         </div>
-            <div class="button2">Sign up</div>
-            </div>
-            <div class="footer">
-            <p class="footer-text">Copyright C the Eren project 2022</p>
-            </div>
-
-
     </div>
-    </body>
-</html>     
+    <div class="main">
+        <div class="main-title"></div>
+        <div class="main-card-container">
+            <div class="card">
+                <div class="card-box"></div>
+                <div class="card-text">TEXT</div>
+            </div>
+            <div class="card">
+                <div class="card-box"></div>
+                <div class="card-text">TEXT</div>
+            </div>
+            <div class="card">
+                <div class="card-box"></div>
+                <div class="card-text">TEXT</div>
+            </div>
+            <div class="card">
+                <div class="card-box"></div>
+                <div class="card-text">TEXT</div>
+            </div>
+        </div>
+    </div>
+    <div class="quote">
+        <div class="quote-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum pariatur vel,
+            alias eaque nemo quod deserunt fugit iusto commodi consequuntur aliquam reprehenderit dignissimos! Minima,
+            optio iure!</div>
+        <div class="quote-author">TEXTORX</div>
+    </div>
+    <div class="action">
+        <div class="action-box">
+            <div class="action-text">
+                <div class="action-title"></div>
+                <div class="action-subtext"></div>
+            </div>
+            <div class="action-button"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-text">Copyright c The Odin Project 2023</div>
+    </div>
+    <script>
+        var title = ` ${document.title}`,
+            index = 0;
+        (function slideTitle() {
+            index = (index + 1) % (title.length + 1);
+            var animatedTitle = title.substring(index) + title.substring(0, index);
+            document.title = animatedTitle;
+            setTimeout(slideTitle, 600);
+        })();
+    </script>
+</body>
+
+</html>
